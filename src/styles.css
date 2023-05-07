@@ -1,7 +1,27 @@
-.img {
-  max-width: 300px;
+body {
+  background: #f2d69e;
+  text-align: center;
 }
 
-.h1 {
-  font-size: 100px;
+img {
+  max-width: 800px;
+  display: block;
+  margin: 30px auto;
+  border-radius: 15px;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+a {
+  color: rgb(11, 75, 16);
+}
+
+a:visited {
+  color: rgb(11, 75, 16);
+}
+
+span {
+  margin: 10px;
 }
