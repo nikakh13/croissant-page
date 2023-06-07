@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🍣 Philadelphia roll</title>
+    <style>
+      body {
+        background: #fdf4f0;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 20px;
+      }
+
+      h1 {
+        color: #402a23;
+        font-size: 40px;
+        margin: 25px 0px;
+        text-align: center;
+      }
+
+      h2 {
+        color: #402a23;
+        text-align: center;
+      }
+
+      img {
+        border-radius: 50px;
+        display: block;
+        margin: 60px auto;
+        max-width: 100%;
+      }
+
+      button {
+        background: #ff9058;
+        border: 1px solid #fadacc;
+        border-radius: 28px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        color: #fdf4f0;
+        display: block;
+        font-size: large;
+        line-height: 22px;
+        margin: 40px auto;
+        padding: 20px 25px;
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        background: #fdf4f0;
+        color: #532a0f;
+        cursor: pointer;
+      }
+
+      p {
+        font-size: 18px;
+        text-align: justify;
+      }
+
+      a {
+        color: #000000;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: #532a0f;
+        text-decoration: underline;
+      }
+
+      .content {
+        background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+        border-radius: 50px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        margin: 0 auto;
+        max-width: 800px;
+        padding: 5px 50px 20px 50px;
+      }
+
+      .author {
+        text-align: center;
+      }
+
+      .link {
+        color: #532a0f;
+        font-size: 15px;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      .link:hover {
+        text-decoration: underline;
+      }
+      .me {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <h1>🍣</h1>
+      <hr />
+      <h1>My obsession is sushi</h1>
+      <h2>Especially divine delicious food — Philadelphia roll</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/071/252/original/roll_phila.jpg?1678649329"
+        alt="Philadelphia roll"
+      />
+
+      <p>
+        A <strong> Philadelphia roll </strong> is a <em>makizushi</em> (also
+        classified as a kawarizushi) type of sushi generally made with smoked
+        salmon, cream cheese, and cucumber, with the rice on the outside
+        (uramaki). It is commonly made with imitation crab instead of salmon,
+        but can be found to include other ingredients, such as other types of
+        fish, avocado, scallions, and sesame seed. Like many Western-inspired
+        sushi rolls, its design and name are modified to target an American
+        market, which includes putting the rice on the outside, and the nori in
+        the inside (inside-out sushi) to appeal to western aesthetics.
+      </p>
+      <a
+        href="https://www.delish.com/cooking/recipe-ideas/a40239263/philadelphia-roll-recipe/"
+        target="_blank"
+        class="link"
+      >
+        Try to make it
+      </a>
+      <br />
+      <button>Buy Philadelphia roll</button>
+      <p class="author">
+        This page was coded by
+        <span class="me">
+          <a
+            href="https://www.linkedin.com/in/veronika-potochniak-87721a218/"
+            target="_blank"
+          >
+            Veronika Potochniak
+          </a>
+        </span>
+      </p>
+    </div>
+    <script>
+      function buySushi() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email?");
+        if (name.length > 0 && email.length > 0) {
+          alert(
+            `Thank you, ${name}! Be ready for the best sushi in your life 😏`
+          );
+        } else {
+          alert(`No name, No sushi 😝`);
+        }
+      }
+
+      let buyButton = document.querySelector("button");
+      buyButton.addEventListener("click", buySushi);
+    </script>
+  </body>
+</html>
